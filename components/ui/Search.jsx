@@ -10,8 +10,20 @@ const Search = ({ setIsSearchModal }) => {
     >
       <OutsideClickHandler onOutsideClick={() => setIsSearchModal(false)}>
         <div className="w-full h-full grid place-content-center">
-          <div className="relative z-50 w-[600px] h-[600px] bg-white border-2">
-            <Title addClass="">Title</Title>
+          <div className="relative z-50 w-[600px] h-[600px] bg-white border-2 p-5">
+            <Title addClass="text-[40px] text-center">Search</Title>
+            <input
+              type="text"
+              placeholder="Search..."
+              className="border w-full"
+            />
+            <div>
+              <ul>
+                <li>
+                  <image src="" />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </OutsideClickHandler>
